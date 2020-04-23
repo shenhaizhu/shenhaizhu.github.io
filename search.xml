@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello 海珠</title>
-    <url>/2013/04/20/hello-world-1/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>]]></content>
-  </entry>
-  <entry>
     <title>入党</title>
     <url>/2020/04/20/%E5%85%A5%E5%85%9A/</url>
     <content><![CDATA[<p>为党的根本工作路线;在党员的行动上，要求广大党员坚持人民利益高于一切，个人利益服从人民利益。此刻，我作为一名大学新生，在身边看到了许多大学生党员的先进行为。使我认识到作为一名大学班级团支部书，要更加党的思想理论知识，要在思想和行动上为其他团员同学作出表率，用实际行动争取早日加入伟大、正确而光荣的中</p>
@@ -22,6 +16,39 @@
       <tags>
         <tag>aa</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>new</title>
+    <url>/2020/04/23/new/</url>
+    <content><![CDATA[<center>欢迎来到spark Web
+---
+#### Spark Web
+[spark官网](http://spark.apache.org/)
+
+<a id="more"></a>
+
+<h4 id="Spark-contet"><a href="#Spark-contet" class="headerlink" title="Spark contet"></a>Spark contet</h4><p>Spark Streaming provides a high-level abstraction called discretized stream or DStream, which represents a continuous stream of data. DStreams can be created either from input data streams from sources such as Kafka, Flume, and Kinesis, or by applying high-level operations on other DStreams. Internally, a DStream is represented as a sequence of RDDs.</p>
+<p>This guide shows you how to start writing Spark Streaming programs with DStreams. You can write Spark Streaming programs in Scala, Java or Python (introduced in Spark 1.2), all of which are presented in this guide. You will find tabs throughout this guide that let you choose between code snippets of different languages.</p>
+<p>Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these difference</p>
+<h4 id="Spark-Code"><a href="#Spark-Code" class="headerlink" title="Spark Code"></a>Spark Code</h4><figure class="highlight scala"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.spark.streaming.<span class="type">StreamingContext</span>._ <span class="comment">// not necessary since Spark 1.3</span></span><br><span class="line"><span class="comment">// Count each word in each batch</span></span><br><span class="line"><span class="keyword">val</span> pairs = words.map(word =&gt; (word, <span class="number">1</span>))</span><br><span class="line"><span class="keyword">val</span> wordCounts = pairs.reduceByKey(_ + _)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Print the first ten elements of each RDD generated in this DStream to the console</span></span><br><span class="line">wordCounts.print()</span><br></pre></td></tr></table></figure>
+
+<h4 id="Spark-img"><a href="#Spark-img" class="headerlink" title="Spark img"></a>Spark img</h4><p><img src="./images/streaming-arch.png" alt="enter description here"></p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+<blockquote>
+<p>Blockquote***==</p>
+</blockquote>
+<center>==**strong text**==</center>
+
+
+
+<center>居中显示的文字
+
+]]></content>
   </entry>
   <entry>
     <title>hello</title>
@@ -46,5 +73,11 @@
       <tags>
         <tag>aa</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>hello 海珠</title>
+    <url>/2013/04/20/hello-world-1/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>]]></content>
   </entry>
 </search>
