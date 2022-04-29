@@ -1,78 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>入党</title>
-    <url>/2020/04/20/%E5%85%A5%E5%85%9A/</url>
-    <content><![CDATA[<p>为党的根本工作路线;在党员的行动上，要求广大党员坚持人民利益高于一切，个人利益服从人民利益。此刻，我作为一名大学新生，在身边看到了许多大学生党员的先进行为。使我认识到作为一名大学班级团支部书，要更加党的思想理论知识，要在思想和行动上为其他团员同学作出表率，用实际行动争取早日加入伟大、正确而光荣的中</p>
-<a id="more"></a>
-<p>　　中国<em>是在中华民族处于最危险之际诞生的，她是顺应中国革命发展的必然产物，肩负起振兴中华的历史使命。经历了第一次、第二次国内革命战争、抗日战争、解放战争等艰苦斗争，中国</em>领导全国各族人民<em>了三座大山，建立了新中国。使饱经压迫和剥削之苦的中国人民翻身解放，成为了国家的主人。十一届三中全会以来，在</em>理论的指导下，在中国<em>的领导下，我国取得了举世瞩目的发展，生产力迅速发展，综合国力大大增强，人民生活水平大幅提高。我国社会主义初级阶段党的基本路线是：领导和团结全国各族人民，以经济建设为中心，坚持社会主义道路、坚持人民民主专政、坚持中国</em>的领导、坚持马列主义、*思想，坚持改革开放，自力更生，艰苦创业，为把我国建设成为富强、民主、礼貌的社会主义现代化国家而奋斗。</p>
-<p>　　在大一开学之际，作为刚刚跨入大学的我，我就向党组织递交了，并参加了学校组织的业余党校学习。业余党校的学习过程中，在党组织和教师的安排下，我们进行了对理论学习的深入讨论，让我们入党进取分子之间相互交流，教师在我们讨论后更加深入地讲解了党的相关理论知识及怎样树立正确的。我认识到我应当从以下五方面端正我的入党动机：</p>
-<p>　　第一，认真地学习马克思主义理论，马克思主义理论异常是马克思主义的党建理论，事实也证明，一个人对共产主义事业和*有了明确、深刻的认识，他的入党动机才会端正。</p>
-<p>　　第二，经过实践的锻炼，不断端正自我的入党动机。马克思主义认识论告诉我们，人们正确认识，要经过实践认识再实践再认识的过程，并不断循环往复，才能正确的地获得。那里最重要的是我们的学习和社会实践。我仅有入党的迫切愿望还不够，还必须付诸于实际行动，在实践中不断用切身的体验来深化对党的认识，从而进一步端正自我的入党动机。经过在社会主义现代化建设中作出进取的贡献，来体会全心全意为人民服务的宗旨;以吃苦在前、享受在后的实际行动，来体会为共产主义不惜牺牲一切的高尚情操;经过学习优秀党员的模范事迹，优秀学生事迹来增强自我对党的感情，激励自我的行动，等等。一句话，就是经过身边活生生的、实实在在的、投身于建设有中国特色社会主义伟大事业的实践活动，来加深对党和共产主义事业的认识，强化正确的入党动机。端正入党动机，不是入党前一时的问题，而是一辈子的事情。</p>
-]]></content>
-      <categories>
-        <category>spark</category>
-      </categories>
-      <tags>
-        <tag>aa</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>new</title>
-    <url>/2020/04/23/new/</url>
-    <content><![CDATA[<center>欢迎来到spark Web
----
-#### Spark Web
-[spark官网](http://spark.apache.org/)
-
-<a id="more"></a>
-
-<h4 id="Spark-contet"><a href="#Spark-contet" class="headerlink" title="Spark contet"></a>Spark contet</h4><p>Spark Streaming provides a high-level abstraction called discretized stream or DStream, which represents a continuous stream of data. DStreams can be created either from input data streams from sources such as Kafka, Flume, and Kinesis, or by applying high-level operations on other DStreams. Internally, a DStream is represented as a sequence of RDDs.</p>
-<p>This guide shows you how to start writing Spark Streaming programs with DStreams. You can write Spark Streaming programs in Scala, Java or Python (introduced in Spark 1.2), all of which are presented in this guide. You will find tabs throughout this guide that let you choose between code snippets of different languages.</p>
-<p>Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these difference</p>
-<h4 id="Spark-Code"><a href="#Spark-Code" class="headerlink" title="Spark Code"></a>Spark Code</h4><figure class="highlight scala"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.spark.streaming.<span class="type">StreamingContext</span>._ <span class="comment">// not necessary since Spark 1.3</span></span><br><span class="line"><span class="comment">// Count each word in each batch</span></span><br><span class="line"><span class="keyword">val</span> pairs = words.map(word =&gt; (word, <span class="number">1</span>))</span><br><span class="line"><span class="keyword">val</span> wordCounts = pairs.reduceByKey(_ + _)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Print the first ten elements of each RDD generated in this DStream to the console</span></span><br><span class="line">wordCounts.print()</span><br></pre></td></tr></table></figure>
-
-<h4 id="Spark-img"><a href="#Spark-img" class="headerlink" title="Spark img"></a>Spark img</h4><p><img src="./images/streaming-arch.png" alt="enter description here"></p>
-<ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-</ul>
-<blockquote>
-<p>Blockquote***==</p>
-</blockquote>
-<center>==**strong text**==</center>
-
-
-
-<center>居中显示的文字
-
-]]></content>
-  </entry>
-  <entry>
-    <title>hello</title>
-    <url>/2020/04/20/word/</url>
+    <title>hello 海珠</title>
+    <url>/2013/04/20/hello-world-1/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-      <categories>
-        <category>spark</category>
-      </categories>
-      <tags>
-        <tag>aa</tag>
-      </tags>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>]]></content>
   </entry>
   <entry>
     <title>Linux命令操作</title>
@@ -364,9 +296,77 @@
       </tags>
   </entry>
   <entry>
-    <title>hello 海珠</title>
-    <url>/2013/04/20/hello-world-1/</url>
+    <title>new</title>
+    <url>/2020/04/23/new/</url>
+    <content><![CDATA[<center>欢迎来到spark Web
+---
+#### Spark Web
+[spark官网](http://spark.apache.org/)
+
+<a id="more"></a>
+
+<h4 id="Spark-contet"><a href="#Spark-contet" class="headerlink" title="Spark contet"></a>Spark contet</h4><p>Spark Streaming provides a high-level abstraction called discretized stream or DStream, which represents a continuous stream of data. DStreams can be created either from input data streams from sources such as Kafka, Flume, and Kinesis, or by applying high-level operations on other DStreams. Internally, a DStream is represented as a sequence of RDDs.</p>
+<p>This guide shows you how to start writing Spark Streaming programs with DStreams. You can write Spark Streaming programs in Scala, Java or Python (introduced in Spark 1.2), all of which are presented in this guide. You will find tabs throughout this guide that let you choose between code snippets of different languages.</p>
+<p>Note: There are a few APIs that are either different or not available in Python. Throughout this guide, you will find the tag Python API highlighting these difference</p>
+<h4 id="Spark-Code"><a href="#Spark-Code" class="headerlink" title="Spark Code"></a>Spark Code</h4><figure class="highlight scala"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.spark.streaming.<span class="type">StreamingContext</span>._ <span class="comment">// not necessary since Spark 1.3</span></span><br><span class="line"><span class="comment">// Count each word in each batch</span></span><br><span class="line"><span class="keyword">val</span> pairs = words.map(word =&gt; (word, <span class="number">1</span>))</span><br><span class="line"><span class="keyword">val</span> wordCounts = pairs.reduceByKey(_ + _)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Print the first ten elements of each RDD generated in this DStream to the console</span></span><br><span class="line">wordCounts.print()</span><br></pre></td></tr></table></figure>
+
+<h4 id="Spark-img"><a href="#Spark-img" class="headerlink" title="Spark img"></a>Spark img</h4><p><img src="./images/streaming-arch.png" alt="enter description here"></p>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+</ul>
+<blockquote>
+<p>Blockquote***==</p>
+</blockquote>
+<center>==**strong text**==</center>
+
+
+
+<center>居中显示的文字
+
+]]></content>
+  </entry>
+  <entry>
+    <title>入党</title>
+    <url>/2020/04/20/%E5%85%A5%E5%85%9A/</url>
+    <content><![CDATA[<p>为党的根本工作路线;在党员的行动上，要求广大党员坚持人民利益高于一切，个人利益服从人民利益。此刻，我作为一名大学新生，在身边看到了许多大学生党员的先进行为。使我认识到作为一名大学班级团支部书，要更加党的思想理论知识，要在思想和行动上为其他团员同学作出表率，用实际行动争取早日加入伟大、正确而光荣的中</p>
+<a id="more"></a>
+<p>　　中国<em>是在中华民族处于最危险之际诞生的，她是顺应中国革命发展的必然产物，肩负起振兴中华的历史使命。经历了第一次、第二次国内革命战争、抗日战争、解放战争等艰苦斗争，中国</em>领导全国各族人民<em>了三座大山，建立了新中国。使饱经压迫和剥削之苦的中国人民翻身解放，成为了国家的主人。十一届三中全会以来，在</em>理论的指导下，在中国<em>的领导下，我国取得了举世瞩目的发展，生产力迅速发展，综合国力大大增强，人民生活水平大幅提高。我国社会主义初级阶段党的基本路线是：领导和团结全国各族人民，以经济建设为中心，坚持社会主义道路、坚持人民民主专政、坚持中国</em>的领导、坚持马列主义、*思想，坚持改革开放，自力更生，艰苦创业，为把我国建设成为富强、民主、礼貌的社会主义现代化国家而奋斗。</p>
+<p>　　在大一开学之际，作为刚刚跨入大学的我，我就向党组织递交了，并参加了学校组织的业余党校学习。业余党校的学习过程中，在党组织和教师的安排下，我们进行了对理论学习的深入讨论，让我们入党进取分子之间相互交流，教师在我们讨论后更加深入地讲解了党的相关理论知识及怎样树立正确的。我认识到我应当从以下五方面端正我的入党动机：</p>
+<p>　　第一，认真地学习马克思主义理论，马克思主义理论异常是马克思主义的党建理论，事实也证明，一个人对共产主义事业和*有了明确、深刻的认识，他的入党动机才会端正。</p>
+<p>　　第二，经过实践的锻炼，不断端正自我的入党动机。马克思主义认识论告诉我们，人们正确认识，要经过实践认识再实践再认识的过程，并不断循环往复，才能正确的地获得。那里最重要的是我们的学习和社会实践。我仅有入党的迫切愿望还不够，还必须付诸于实际行动，在实践中不断用切身的体验来深化对党的认识，从而进一步端正自我的入党动机。经过在社会主义现代化建设中作出进取的贡献，来体会全心全意为人民服务的宗旨;以吃苦在前、享受在后的实际行动，来体会为共产主义不惜牺牲一切的高尚情操;经过学习优秀党员的模范事迹，优秀学生事迹来增强自我对党的感情，激励自我的行动，等等。一句话，就是经过身边活生生的、实实在在的、投身于建设有中国特色社会主义伟大事业的实践活动，来加深对党和共产主义事业的认识，强化正确的入党动机。端正入党动机，不是入党前一时的问题，而是一辈子的事情。</p>
+]]></content>
+      <categories>
+        <category>spark</category>
+      </categories>
+      <tags>
+        <tag>aa</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hello</title>
+    <url>/2020/04/20/word/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>]]></content>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>spark</category>
+      </categories>
+      <tags>
+        <tag>aa</tag>
+      </tags>
   </entry>
 </search>
